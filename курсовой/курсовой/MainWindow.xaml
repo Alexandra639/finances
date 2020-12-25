@@ -1,0 +1,52 @@
+﻿<Window x:Class="курсовой.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:курсовой"
+        mc:Ignorable="d"
+        Title="Учет финансов" Height="430" Width="575" FontSize="16" 
+        ResizeMode="CanResizeWithGrip" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="StyleButton" TargetType="Button">
+            <Setter Property="Margin" Value="0 10 0 10"></Setter>
+            <Setter Property="TextElement.FontFamily" Value="Candara"></Setter>
+            <Setter Property="TextElement.FontSize" Value="16"></Setter>
+            <Setter Property="MinWidth" Value="200"></Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            <Setter Property="Background" Value="Gold" ></Setter>
+            <Setter Property="BorderBrush" Value="Gold"></Setter>
+
+        </Style>
+    </Window.Resources>
+    <Grid Margin="0,0,-5,0" >
+        <Grid.Background>
+            <ImageBrush ImageSource="Resourses/1.jpg" Opacity="0.7"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition>
+
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label FontFamily="Candara" Foreground="Black" FontWeight="Bold" FontStyle="Italic" >
+                <Label.Background>
+                    <SolidColorBrush Color="#FF231111" Opacity="0"/>
+                </Label.Background> Логин:
+            </Label>
+            <TextBox Text="{Binding Login}"  Name="TextBox1" FontFamily="Candara" BorderBrush="#FF0023FF"  />
+
+            <Label FontFamily="Candara" Foreground="Black" FontWeight="Bold" FontStyle="Italic" >
+                <Label.Background>
+                    <SolidColorBrush Color="Black" Opacity="0"/>
+                </Label.Background> Пароль:
+            </Label>
+            <TextBox Text="{Binding Password}" Name="PasswordBox1" FontFamily="Candara" BorderBrush="#FF002EFF"/>
+            <Button Style="{StaticResource StyleButton}" Command="{Binding Authorization}" Content="Войти" Grid.IsSharedSizeScope="True" Background="#FF3656FB" BorderBrush="#FF3656FB" Foreground="White" FontWeight="Bold" FontStyle="Italic"/>
+            <Button Style="{StaticResource StyleButton}" Content="Регистрация" Command="{Binding Registration}" BorderBrush="#FFF7343D" Foreground="White" Background="#FFF7343D" FontWeight="Bold" FontStyle="Italic" />
+
+
+
+        </StackPanel>
+    </Grid>
+</Window>

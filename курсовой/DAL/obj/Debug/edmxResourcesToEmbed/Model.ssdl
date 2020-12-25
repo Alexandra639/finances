@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EXPENSE">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="expense_user_FK" Type="int" Nullable="false" />
+    <Property Name="expense_guide_FK" Type="int" Nullable="false" />
+    <Property Name="expense_date" Type="date" />
+    <Property Name="expense_size" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EXPENSE GUIDE">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="expense_type" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INCOME">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="income_user_FK" Type="int" Nullable="false" />
+    <Property Name="income_guid_FK" Type="int" Nullable="false" />
+    <Property Name="income_date" Type="date" />
+    <Property Name="income_size" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INCOME GUIDE">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="income_type" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PERIOD">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_FK" Type="int" Nullable="false" />
+    <Property Name="expense_type_FK" Type="int" />
+    <Property Name="expense_date_start" Type="datetime" />
+    <Property Name="expense_date_end" Type="datetime" Nullable="false" />
+    <Property Name="expense_status" Type="int" Nullable="false" />
+    <Property Name="period_type_FK" Type="int" />
+    <Property Name="payment_name" Type="varchar" MaxLength="50" />
+    <Property Name="expense_size" Type="float" />
+    <Property Name="period_reminder" Type="datetime" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TYPE PERIOD">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="USER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varbinary" MaxLength="30" Nullable="false" />
+    <Property Name="surname" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="login" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="limit_size" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_EXPENSE_EXPENSE GUIDE">
+    <End Role="EXPENSE GUIDE" Type="Self.EXPENSE GUIDE" Multiplicity="1" />
+    <End Role="EXPENSE" Type="Self.EXPENSE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EXPENSE GUIDE">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EXPENSE">
+        <PropertyRef Name="expense_guide_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EXPENSE_USER">
+    <End Role="USER" Type="Self.USER" Multiplicity="1" />
+    <End Role="EXPENSE" Type="Self.EXPENSE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USER">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EXPENSE">
+        <PropertyRef Name="expense_user_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INCOME_INCOME GUIDE">
+    <End Role="INCOME GUIDE" Type="Self.INCOME GUIDE" Multiplicity="1" />
+    <End Role="INCOME" Type="Self.INCOME" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INCOME GUIDE">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="INCOME">
+        <PropertyRef Name="income_guid_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INCOME_USER">
+    <End Role="USER" Type="Self.USER" Multiplicity="1" />
+    <End Role="INCOME" Type="Self.INCOME" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USER">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="INCOME">
+        <PropertyRef Name="income_user_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PERIOD_EXPENSE GUIDE">
+    <End Role="EXPENSE GUIDE" Type="Self.EXPENSE GUIDE" Multiplicity="0..1" />
+    <End Role="PERIOD" Type="Self.PERIOD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EXPENSE GUIDE">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PERIOD">
+        <PropertyRef Name="expense_type_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PERIOD_TYPE PERIOD">
+    <End Role="TYPE PERIOD" Type="Self.TYPE PERIOD" Multiplicity="0..1" />
+    <End Role="PERIOD" Type="Self.PERIOD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TYPE PERIOD">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PERIOD">
+        <PropertyRef Name="period_type_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PERIOD_USER">
+    <End Role="USER" Type="Self.USER" Multiplicity="1" />
+    <End Role="PERIOD" Type="Self.PERIOD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USER">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PERIOD">
+        <PropertyRef Name="user_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище ModelContainer">
+    <EntitySet Name="EXPENSE" EntityType="Self.EXPENSE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EXPENSE GUIDE" EntityType="Self.EXPENSE GUIDE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INCOME" EntityType="Self.INCOME" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INCOME GUIDE" EntityType="Self.INCOME GUIDE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PERIOD" EntityType="Self.PERIOD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TYPE PERIOD" EntityType="Self.TYPE PERIOD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USER" EntityType="Self.USER" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_EXPENSE_EXPENSE GUIDE" Association="Self.FK_EXPENSE_EXPENSE GUIDE">
+      <End Role="EXPENSE GUIDE" EntitySet="EXPENSE GUIDE" />
+      <End Role="EXPENSE" EntitySet="EXPENSE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EXPENSE_USER" Association="Self.FK_EXPENSE_USER">
+      <End Role="USER" EntitySet="USER" />
+      <End Role="EXPENSE" EntitySet="EXPENSE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INCOME_INCOME GUIDE" Association="Self.FK_INCOME_INCOME GUIDE">
+      <End Role="INCOME GUIDE" EntitySet="INCOME GUIDE" />
+      <End Role="INCOME" EntitySet="INCOME" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INCOME_USER" Association="Self.FK_INCOME_USER">
+      <End Role="USER" EntitySet="USER" />
+      <End Role="INCOME" EntitySet="INCOME" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PERIOD_EXPENSE GUIDE" Association="Self.FK_PERIOD_EXPENSE GUIDE">
+      <End Role="EXPENSE GUIDE" EntitySet="EXPENSE GUIDE" />
+      <End Role="PERIOD" EntitySet="PERIOD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PERIOD_TYPE PERIOD" Association="Self.FK_PERIOD_TYPE PERIOD">
+      <End Role="TYPE PERIOD" EntitySet="TYPE PERIOD" />
+      <End Role="PERIOD" EntitySet="PERIOD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PERIOD_USER" Association="Self.FK_PERIOD_USER">
+      <End Role="USER" EntitySet="USER" />
+      <End Role="PERIOD" EntitySet="PERIOD" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

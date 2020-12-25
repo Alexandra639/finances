@@ -1,0 +1,51 @@
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\DAL\bin\Debug\DAL.dll.config
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\DAL\bin\Debug\DAL.dll
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\DAL\bin\Debug\DAL.pdb
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\DAL\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\DAL\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\DAL\obj\Debug\DAL.dll
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\DAL\obj\Debug\DAL.pdb
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\DAL\obj\Debug\DAL.dll
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\DAL\obj\Debug\DAL.pdb
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\DAL\bin\Debug\DAL.dll.config
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\DAL\bin\Debug\DAL.dll
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\DAL\bin\Debug\DAL.pdb
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\DAL\bin\Debug\EntityFramework.dll
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\DAL\bin\Debug\EntityFramework.xml
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\DAL\bin\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Life\University\Конструирование ПО\курсовой\DAL\bin\Debug\DAL.dll.config
+C:\Life\University\Конструирование ПО\курсовой\DAL\bin\Debug\DAL.dll
+C:\Life\University\Конструирование ПО\курсовой\DAL\bin\Debug\DAL.pdb
+C:\Life\University\Конструирование ПО\курсовой\DAL\bin\Debug\EntityFramework.dll
+C:\Life\University\Конструирование ПО\курсовой\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Life\University\Конструирование ПО\курсовой\DAL\bin\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Life\University\Конструирование ПО\курсовой\DAL\bin\Debug\EntityFramework.xml
+C:\Life\University\Конструирование ПО\курсовой\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Life\University\Конструирование ПО\курсовой\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Life\University\Конструирование ПО\курсовой\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Life\University\Конструирование ПО\курсовой\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Life\University\Конструирование ПО\курсовой\DAL\obj\Debug\DAL.dll
+C:\Life\University\Конструирование ПО\курсовой\DAL\obj\Debug\DAL.pdb
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\DAL\bin\Debug\DAL.dll.config
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\DAL\bin\Debug\DAL.dll
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\DAL\bin\Debug\DAL.pdb
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\DAL\bin\Debug\EntityFramework.dll
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\DAL\bin\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\DAL\bin\Debug\EntityFramework.xml
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\DAL\obj\Debug\DAL.dll
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\DAL\obj\Debug\DAL.pdb

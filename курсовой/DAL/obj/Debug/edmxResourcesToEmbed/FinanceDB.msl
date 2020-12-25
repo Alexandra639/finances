@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище FinanceModelContainer" CdmEntityContainer="FinanceEntities1">
+    <EntitySetMapping Name="EXPENSE">
+      <EntityTypeMapping TypeName="FinanceModel.EXPENSE">
+        <MappingFragment StoreEntitySet="EXPENSE">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="expense_user_FK" ColumnName="expense_user_FK" />
+          <ScalarProperty Name="expense_guide_FK" ColumnName="expense_guide_FK" />
+          <ScalarProperty Name="expense_date" ColumnName="expense_date" />
+          <ScalarProperty Name="expense_size" ColumnName="expense_size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EXPENSE_GUIDE">
+      <EntityTypeMapping TypeName="FinanceModel.EXPENSE_GUIDE">
+        <MappingFragment StoreEntitySet="EXPENSE GUIDE">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="expense_type" ColumnName="expense_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INCOME">
+      <EntityTypeMapping TypeName="FinanceModel.INCOME">
+        <MappingFragment StoreEntitySet="INCOME">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="income_user_FK" ColumnName="income_user_FK" />
+          <ScalarProperty Name="income_guid_FK" ColumnName="income_guid_FK" />
+          <ScalarProperty Name="income_date" ColumnName="income_date" />
+          <ScalarProperty Name="income_size" ColumnName="income_size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INCOME_GUIDE">
+      <EntityTypeMapping TypeName="FinanceModel.INCOME_GUIDE">
+        <MappingFragment StoreEntitySet="INCOME GUIDE">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="income_type" ColumnName="income_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERIOD">
+      <EntityTypeMapping TypeName="FinanceModel.PERIOD">
+        <MappingFragment StoreEntitySet="PERIOD">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_FK" ColumnName="user_FK" />
+          <ScalarProperty Name="expense_type_FK" ColumnName="expense_type_FK" />
+          <ScalarProperty Name="expense_date_start" ColumnName="expense_date_start" />
+          <ScalarProperty Name="expense_date_end" ColumnName="expense_date_end" />
+          <ScalarProperty Name="expense_status" ColumnName="expense_status" />
+          <ScalarProperty Name="period_type_FK" ColumnName="period_type_FK" />
+          <ScalarProperty Name="payment_name" ColumnName="payment_name" />
+          <ScalarProperty Name="expense_size" ColumnName="expense_size" />
+          <ScalarProperty Name="period_reminder" ColumnName="period_reminder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="FinanceModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TYPE_PERIOD">
+      <EntityTypeMapping TypeName="FinanceModel.TYPE_PERIOD">
+        <MappingFragment StoreEntitySet="TYPE PERIOD">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER">
+      <EntityTypeMapping TypeName="FinanceModel.USER">
+        <MappingFragment StoreEntitySet="USER">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="limit_size" ColumnName="limit_size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

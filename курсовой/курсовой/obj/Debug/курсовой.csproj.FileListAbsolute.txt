@@ -1,0 +1,189 @@
+C:\Users\User\Desktop\курсовой\курсовой\bin\Debug\курсовой.exe.config
+C:\Users\User\Desktop\курсовой\курсовой\bin\Debug\курсовой.exe
+C:\Users\User\Desktop\курсовой\курсовой\bin\Debug\курсовой.pdb
+C:\Users\User\Desktop\курсовой\курсовой\obj\Debug\курсовой.csprojAssemblyReference.cache
+C:\Users\User\Desktop\курсовой\курсовой\obj\Debug\MainWindow.g.cs
+C:\Users\User\Desktop\курсовой\курсовой\obj\Debug\App.g.cs
+C:\Users\User\Desktop\курсовой\курсовой\obj\Debug\курсовой_MarkupCompile.cache
+C:\Users\User\Desktop\курсовой\курсовой\obj\Debug\курсовой_MarkupCompile.lref
+C:\Users\User\Desktop\курсовой\курсовой\obj\Debug\MainWindow.baml
+C:\Users\User\Desktop\курсовой\курсовой\obj\Debug\курсовой.g.resources
+C:\Users\User\Desktop\курсовой\курсовой\obj\Debug\курсовой.Properties.Resources.resources
+C:\Users\User\Desktop\курсовой\курсовой\obj\Debug\курсовой.csproj.GenerateResource.cache
+C:\Users\User\Desktop\курсовой\курсовой\obj\Debug\курсовой.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\курсовой\курсовой\obj\Debug\курсовой.exe
+C:\Users\User\Desktop\курсовой\курсовой\obj\Debug\курсовой.pdb
+C:\Users\User\Desktop\курсовой\курсовой\obj\Debug\Window1.g.cs
+C:\Users\User\Desktop\курсовой\курсовой\obj\Debug\Window1.baml
+C:\Users\User\Desktop\3 курс\Фомина\курсовойй проект\курсовой\курсовой\obj\Debug\курсовой.csprojAssemblyReference.cache
+C:\Users\User\Desktop\3 курс\Фомина\курсовойй проект\курсовой\курсовой\obj\Debug\MainWindow.g.cs
+C:\Users\User\Desktop\3 курс\Фомина\курсовойй проект\курсовой\курсовой\obj\Debug\Window1.g.cs
+C:\Users\User\Desktop\3 курс\Фомина\курсовойй проект\курсовой\курсовой\obj\Debug\App.g.cs
+C:\Users\User\Desktop\3 курс\Фомина\курсовойй проект\курсовой\курсовой\obj\Debug\курсовой_MarkupCompile.cache
+C:\Users\User\Desktop\3 курс\Фомина\курсовойй проект\курсовой\курсовой\obj\Debug\курсовой_MarkupCompile.lref
+C:\Users\User\Desktop\3 курс\Фомина\курсовойй проект\курсовой\курсовой\obj\Debug\курсовой.exe
+C:\Users\User\Desktop\3 курс\Фомина\курсовойй проект\курсовой\курсовой\obj\Debug\курсовой.pdb
+C:\Users\User\Desktop\3 курс\Фомина\курсовойй проект\курсовой\курсовой\bin\Debug\курсовой.exe.config
+C:\Users\User\Desktop\3 курс\Фомина\курсовойй проект\курсовой\курсовой\bin\Debug\курсовой.exe
+C:\Users\User\Desktop\3 курс\Фомина\курсовойй проект\курсовой\курсовой\bin\Debug\курсовой.pdb
+C:\Users\User\Desktop\3 курс\Фомина\курсовойй проект\курсовой\курсовой\obj\Debug\MainWindow.baml
+C:\Users\User\Desktop\3 курс\Фомина\курсовойй проект\курсовой\курсовой\obj\Debug\Window1.baml
+C:\Users\User\Desktop\3 курс\Фомина\курсовойй проект\курсовой\курсовой\obj\Debug\курсовой.g.resources
+C:\Users\User\Desktop\3 курс\Фомина\курсовойй проект\курсовой\курсовой\obj\Debug\курсовой.Properties.Resources.resources
+C:\Users\User\Desktop\3 курс\Фомина\курсовойй проект\курсовой\курсовой\obj\Debug\курсовой.csproj.GenerateResource.cache
+C:\Users\User\Desktop\3 курс\Фомина\курсовойй проект\курсовой\курсовой\obj\Debug\курсовой.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\bin\Debug\курсовой.exe.config
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\bin\Debug\курсовой.exe
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\bin\Debug\курсовой.pdb
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\курсовой.csprojAssemblyReference.cache
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\App.g.cs
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\курсовой_MarkupCompile.cache
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\курсовой_MarkupCompile.lref
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\курсовой.g.resources
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\курсовой.Properties.Resources.resources
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\курсовой.csproj.GenerateResource.cache
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\курсовой.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\курсовой.exe
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\курсовой.pdb
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\bin\Debug\BLL.dll
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\bin\Debug\DAL.dll
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\bin\Debug\BLL.pdb
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\bin\Debug\BLL.dll.config
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\bin\Debug\DAL.pdb
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\bin\Debug\DAL.dll.config
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\курсовой.csproj.CopyComplete
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\EditMyProfilePage.g.cs
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\IncomePage.g.cs
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\RegistrationPage.g.cs
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\ExpensePage.g.cs
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\EditMyProfilePage.baml
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\IncomePage.baml
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\RegistrationPage.baml
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\ExpensePage.baml
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\MainWindow.g.cs
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\MainWindow.baml
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\obj\Debug\курсовой.csproj.ResolveComReference.cache
+C:\Users\User\Desktop\3 курс\Фомина\курсовой проект\курсовой\курсовой\bin\Debug\itextsharp.dll
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\bin\Debug\курсовой.exe.config
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\bin\Debug\курсовой.exe
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\bin\Debug\курсовой.pdb
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\bin\Debug\BLL.dll
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\bin\Debug\EntityFramework.dll
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\bin\Debug\DAL.dll
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\bin\Debug\BLL.pdb
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\bin\Debug\BLL.dll.config
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\bin\Debug\EntityFramework.xml
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\bin\Debug\DAL.pdb
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\bin\Debug\DAL.dll.config
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\курсовой.csprojAssemblyReference.cache
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\курсовой.csproj.ResolveComReference.cache
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\MainWindow.g.cs
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\EditMyProfilePage.g.cs
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\IncomePage.g.cs
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\RegistrationPage.g.cs
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\ExpensePage.g.cs
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\App.g.cs
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\курсовой_MarkupCompile.cache
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\курсовой_MarkupCompile.lref
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\MainWindow.baml
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\EditMyProfilePage.baml
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\IncomePage.baml
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\RegistrationPage.baml
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\ExpensePage.baml
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\курсовой.g.resources
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\курсовой.Properties.Resources.resources
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\курсовой.csproj.GenerateResource.cache
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\курсовой.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\курсовой.csproj.CopyComplete
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\курсовой.exe
+C:\Users\alexa\Downloads\kursovoyproject-master\kursovoyproject-master\курсовой\курсовой\obj\Debug\курсовой.pdb
+C:\Life\University\Конструирование ПО\курсовой\курсовой\bin\Debug\курсовой.exe.config
+C:\Life\University\Конструирование ПО\курсовой\курсовой\bin\Debug\курсовой.exe
+C:\Life\University\Конструирование ПО\курсовой\курсовой\bin\Debug\курсовой.pdb
+C:\Life\University\Конструирование ПО\курсовой\курсовой\bin\Debug\BLL.dll
+C:\Life\University\Конструирование ПО\курсовой\курсовой\bin\Debug\EntityFramework.dll
+C:\Life\University\Конструирование ПО\курсовой\курсовой\bin\Debug\EntityFramework.SqlServer.dll
+C:\Life\University\Конструирование ПО\курсовой\курсовой\bin\Debug\DAL.dll
+C:\Life\University\Конструирование ПО\курсовой\курсовой\bin\Debug\BLL.pdb
+C:\Life\University\Конструирование ПО\курсовой\курсовой\bin\Debug\BLL.dll.config
+C:\Life\University\Конструирование ПО\курсовой\курсовой\bin\Debug\EntityFramework.xml
+C:\Life\University\Конструирование ПО\курсовой\курсовой\bin\Debug\EntityFramework.SqlServer.xml
+C:\Life\University\Конструирование ПО\курсовой\курсовой\bin\Debug\DAL.pdb
+C:\Life\University\Конструирование ПО\курсовой\курсовой\bin\Debug\DAL.dll.config
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.csprojAssemblyReference.cache
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.csproj.ResolveComReference.cache
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой_MarkupCompile.cache
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой_MarkupCompile.lref
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.g.resources
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.Properties.Resources.resources
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.csproj.GenerateResource.cache
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.csproj.CoreCompileInputs.cache
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.csproj.CopyComplete
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.exe
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.pdb
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\View\EditMyProfilePage.g.cs
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\View\IncomePage.g.cs
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\View\RegistrationPage.g.cs
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\View\ExpensePage.g.cs
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\View\App.g.cs
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\View\EditMyProfilePage.baml
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\View\IncomePage.baml
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\View\RegistrationPage.baml
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\View\ExpensePage.baml
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\MainWindow.g.cs
+C:\Life\University\Конструирование ПО\курсовой\курсовой\obj\Debug\MainWindow.baml
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\bin\Debug\курсовой.exe.config
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\bin\Debug\курсовой.exe
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\bin\Debug\курсовой.pdb
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\bin\Debug\BLL.dll
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\bin\Debug\EntityFramework.dll
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\bin\Debug\DAL.dll
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\bin\Debug\BLL.pdb
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\bin\Debug\BLL.dll.config
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\bin\Debug\EntityFramework.xml
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\bin\Debug\DAL.pdb
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\bin\Debug\DAL.dll.config
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.csproj.ResolveComReference.cache
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\MainWindow.g.cs
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\EditMyProfilePage.g.cs
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\IncomePage.g.cs
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\RegistrationPage.g.cs
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\ExpensePage.g.cs
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\App.g.cs
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой_MarkupCompile.cache
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой_MarkupCompile.lref
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\MainWindow.baml
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\EditMyProfilePage.baml
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\IncomePage.baml
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\RegistrationPage.baml
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\ExpensePage.baml
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.g.resources
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.Properties.Resources.resources
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.csproj.CopyComplete
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.exe
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\курсовой.pdb
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\EditSourcesOfIncomePage.g.cs
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\EditSourcesOfIncomePage.baml
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\EditSourcesOfExpensePage.g.cs
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\EditSourcesOfExpensePage.baml
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\EditIncomePage.g.cs
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\EditIncomePage.baml
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\EditExpensePage.g.cs
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\EditExpensePage.baml
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\PlanDayPage.g.cs
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\PlanDayPage.baml
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\PlanMonthPage.g.cs
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\PlanMonthPage.baml
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\PlanYearPage.g.cs
+C:\Users\USER\Desktop\Конструирование ПО\курсовой\курсовой\obj\Debug\View\PlanYearPage.baml

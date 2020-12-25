@@ -1,0 +1,48 @@
+﻿<Window x:Class="курсовой.View.EditIncomePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:курсовой"
+        mc:Ignorable="d"
+        Title="Редактировать доход" Height="326.203" Width="437.968" FontSize="16"
+        ResizeMode="CanResizeWithGrip" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="StyleButton" TargetType="Button">
+            <Setter Property="Margin" Value="0 10 0 10"/>
+            <Setter Property="TextElement.FontFamily" Value="Candara"/>
+            <Setter Property="TextElement.FontSize" Value="16"/>
+            <Setter Property="MinWidth" Value="400"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="Background" Value="Gold" />
+            <Setter Property="BorderBrush" Value="Gold"/>
+        </Style>
+    </Window.Resources>
+    <Grid Margin="0,0,-5,0" >
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resourses/1.jpg" Opacity="0.4"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto">
+
+            </ColumnDefinition>
+            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition Width="356*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="18,14,17,15"   >
+            <Label Content="Источник дохода" Name="Label1"  FontFamily="Candara" FontWeight="Bold" FontStyle="Italic"   />
+            <ComboBox Name="Sources" BorderBrush="#FF3656FB"  DisplayMemberPath="income_type" SelectedItem="{Binding SelectedSourceUpdate}"  SelectedIndex="{Binding SelectedSourceIdUpdate}" ItemsSource="{Binding SourcesUpdate}" />
+            <Label Content="Дата дохода" Name="Label2" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic"  />
+            <DatePicker SelectedDate="{Binding DateUpdate}" x:Name="Date" Margin="0,5" FontFamily="Candara" BorderBrush="#FF3656FB" FontWeight="Bold" FontStyle="Italic" Width="397"/>
+            <Label Content="Сумма" Name="Label4" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic"  />
+            <TextBox Name="SizeUpdate" BorderBrush="#FF3656FB" Text="{Binding SizeUpdate}"  />
+
+            <Button Style="{StaticResource StyleButton}" Content="Сохранить" Command="{Binding UpdateIncome}" Background="#FF3656FB" BorderBrush="#FF3656FB" Foreground="White" FontWeight="Bold" FontStyle="Italic" Width="339"/>
+            <Button Style="{StaticResource StyleButton}" Content="Отмена" Command="{Binding Cancel}" Foreground="White" BorderBrush="#FFF7343D" Background="#FFF7343D" FontWeight="Bold" FontStyle="Italic" Width="229"/>
+
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>

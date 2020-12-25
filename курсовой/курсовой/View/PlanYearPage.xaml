@@ -1,0 +1,167 @@
+﻿<Window x:Class="курсовой.View.PlanYearPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:курсовой"
+        mc:Ignorable="d"
+        Title="Планирование бюджета" Height="613" Width="1139.5" FontSize="16"
+        ResizeMode="CanResizeWithGrip" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="StyleButton" TargetType="Button">
+            <Setter Property="Margin" Value="0 10 0 10"></Setter>
+            <Setter Property="TextElement.FontFamily" Value="Candara"></Setter>
+            <Setter Property="TextElement.FontSize" Value="16"></Setter>
+            <Setter Property="MinWidth" Value="8"/>
+            <Setter Property="MaxWidth" Value="250"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+        </Style>
+        
+      
+    </Window.Resources>
+    <Grid Margin="0,-8,3,-1"  >
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resourses/1.jpg" Opacity="0.4"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*">
+            </ColumnDefinition>
+            <ColumnDefinition Width="508*"/>
+            <ColumnDefinition Width="621*">
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1" Margin="0,68,10,0" VerticalAlignment="Top" Height="475">
+            <Button Style="{StaticResource StyleButton}" Content="Доходы" Name="Button2" Margin="0 5 0 5" Background="#FF3656FB" Command="{Binding Income}" Foreground="White" BorderBrush="#FF3656FB" FontWeight="Bold" FontStyle="Italic" />
+            <Button Style="{StaticResource StyleButton}" Content="Расходы" Name="Button1" Margin="0 5 0 5"  Command="{Binding Expense}" Background="#FF3656FB" BorderBrush="#FF3656FB" Foreground="White" FontWeight="Bold" FontStyle="Italic" />
+            <Button Style="{StaticResource StyleButton}" Content="Планирование" Name="Button3" Margin="0 5 0 5" Background="#FFAE07B6" BorderBrush="#FFAE07B6" Foreground="White" FontWeight="Bold" FontStyle="Italic" />
+            <Label Content="Отчёт по годам за выбранное десятилетие" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic" Margin="0,20,0,0" HorizontalAlignment="Center" FontSize="18" Padding="5,10,5,5"/>
+            <DataGrid  IsReadOnly="True"  Height="241" x:Name="DataGrid1" ItemsSource="{Binding PlanDataGrid}"  AutoGenerateColumns="False" FontStyle="Italic" Margin="27,5,0,0">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Дата" FontFamily="Candara" Binding="{Binding plan_date, StringFormat='yyyy'}" MinWidth="10" MaxWidth="120"/>
+                    <DataGridTextColumn Header="П. доход" FontFamily="Candara" Binding="{Binding plan_income_size}" MinWidth="10" MaxWidth="120"/>
+                    <DataGridTextColumn Header="Ф. доход" FontFamily="Candara" Binding="{Binding itog_income_size}" MinWidth="10" MaxWidth="120"/>
+                    <DataGridTextColumn Header="П. расход" FontFamily="Candara" Binding="{Binding plan_expense_size}" MinWidth="10" MaxWidth="120"/>
+                    <DataGridTextColumn Header="Ф. расход" FontFamily="Candara" Binding="{Binding itog_expense_size}" MinWidth="10" MaxWidth="120"/>
+                    <DataGridTextColumn Header="П. остаток" FontFamily="Candara" Binding="{Binding plan_balance}" MinWidth="10" MaxWidth="120"/>
+                    <DataGridTextColumn Header="Ф. остаток" FontFamily="Candara" Binding="{Binding itog_balance}" MinWidth="10" MaxWidth="120"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Style="{StaticResource StyleButton}" Content="Печать" Command="{Binding Print}" Background="#FF3656FB" BorderBrush="#FF3656FB" Foreground="White" FontWeight="Bold" FontStyle="Italic" Margin="0,20,0,10"/>
+        </StackPanel>
+        <StackPanel Grid.Column="2" VerticalAlignment="Center" Height="581" Margin="0,10,0,0" >
+            <StackPanel Grid.Column="2"  VerticalAlignment="Center" Height="210" Orientation="Horizontal" Margin="0,22,0,0">
+                <StackPanel Grid.Column="2"  VerticalAlignment="Center" Orientation="Vertical" Height="210" Margin="30,5,0,0">
+                    <StackPanel Grid.Column="2" Margin="0,20,10,0" VerticalAlignment="Center" Height="52" Orientation="Horizontal">
+                        <Button Style="{StaticResource StyleButton}"  Margin="0,0,15,0"  Command="{Binding PlanDay}" Content="День" Foreground="White" BorderBrush="#FF3656FB" Background="#FF3656FB"  FontWeight="Bold" FontStyle="Italic" Width="100" Height="40"/>
+                        <Button Style="{StaticResource StyleButton}"  Margin="0,0,15,0" Command="{Binding PlanMonth}" Content="Месяц" Foreground="White" BorderBrush="#FF3656FB" Background="#FF3656FB" FontWeight="Bold" FontStyle="Italic" Width="100" Height="40"/>
+                        <Button Style="{StaticResource StyleButton}"  Margin="0,0,20,0"   Content="Год" Foreground="White" BorderBrush="#FFAE07B6" Background="#FFAE07B6"  FontWeight="Bold" FontStyle="Italic" Width="100" Height="40"/>
+                    </StackPanel>
+                    <Border Margin="0,10" BorderThickness="0" Height="120">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="112*"/>
+                                <ColumnDefinition Width="120*"/>
+                                <ColumnDefinition Width="120*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Border Grid.Row="0" Grid.Column="0" >
+                                <Label Content="За 10 лет" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic" Foreground="Black" >
+                                    <Label.Background>
+                                        <SolidColorBrush Color="#FFAE07B6" Opacity="0.6"/>
+                                    </Label.Background>
+                                </Label>
+                            </Border>
+                            <Border Grid.Row="1" Grid.Column="0" >
+                                <Label Content="Суммарный" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic"/>
+                            </Border>
+                            <Border Grid.Row="2" Grid.Column="0" >
+                                <Label Content="Фактический" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic"/>
+                            </Border>
+                            <Border Grid.Row="0" Grid.Column="1">
+                                <Label Content="Доход" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic" />
+                            </Border>
+                            <Border Grid.Row="1" Grid.Column="1" >
+                                <Label Content="{Binding IPlan2}" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic" />
+                            </Border>
+                            <Border Grid.Row="2" Grid.Column="1" >
+                                <Label Content="{Binding IPlan3}" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic"/>
+                            </Border>
+                            <Border Grid.Row="0" Grid.Column="2">
+                                <Label Content="Расход" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic" />
+                            </Border>
+                            <Border Grid.Row="1" Grid.Column="2" >
+                                <Label Content="{Binding EPlan2}" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic" />
+                            </Border>
+                            <Border Grid.Row="2" Grid.Column="2" >
+                                <Label Content="{Binding EPlan3}" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic" />
+                            </Border>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+                <Calendar DisplayModeChanged="_calendar_DisplayModeChanged" DisplayDate="{Binding SelectedYear, UpdateSourceTrigger =LostFocus}"  Loaded="_calendar_OnLoaded"   x:Name="C" FontFamily="Candara" BorderBrush="#FF3656FB"  FontWeight="Bold" FontStyle="Italic" Margin="0,30,0,0" Width="198" />
+            </StackPanel>
+            <Border Margin="0,10,11,6" BorderThickness="1" BorderBrush="Silver" Height="102" Width="547">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0" Grid.Column="0" BorderBrush="#FFAE07B6" BorderThickness="3"></Border>
+                    <Border Grid.Row="1" Grid.Column="0" BorderBrush="#FFAE07B6" BorderThickness="3">
+                        <Label Content="План" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic"/>
+                    </Border>
+                    <Border Grid.Row="2" Grid.Column="0" BorderBrush="#FFAE07B6" BorderThickness="3">
+                        <Label Content="Факт" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic"/>
+                    </Border>
+                    <Border Grid.Row="0" Grid.Column="1" BorderBrush="#FFAE07B6" BorderThickness="3">
+                        <Label Content="Доход" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic" />
+                    </Border>
+                    <Border Grid.Row="1" Grid.Column="1" BorderBrush="#FFAE07B6" BorderThickness="1">
+                        <TextBox Text="{Binding iNCOMEPlanSize}"  FontFamily="Candara" BorderBrush="#FF3656FB" FontWeight="Bold" FontStyle="Italic"/>
+                    </Border>
+                    <Border Grid.Row="2" Grid.Column="1" BorderBrush="#FFAE07B6" BorderThickness="1">
+                        <Label Content="{Binding iNCOMEItogSize}" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic" />
+                    </Border>
+                    <Border Grid.Row="0" Grid.Column="2" BorderBrush="#FFAE07B6" BorderThickness="3">
+                        <Label Content="Расход" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic" />
+                    </Border>
+                    <Border Grid.Row="1" Grid.Column="2" BorderBrush="#FFAE07B6" BorderThickness="1">
+                        <TextBox Text="{Binding EXPENSEPlanSize}"  FontFamily="Candara" BorderBrush="#FF3656FB" FontWeight="Bold" FontStyle="Italic"/>
+                    </Border>
+                    <Border Grid.Row="2" Grid.Column="2" BorderBrush="#FFAE07B6" BorderThickness="1">
+                        <Label Content="{Binding EXPENSEItogSize}" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic" />
+                    </Border>
+                    <Border Grid.Row="0" Grid.Column="3" BorderBrush="#FFAE07B6" BorderThickness="3">
+                        <Label Content="Остаток" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic" />
+                    </Border>
+                    <Border Grid.Row="1" Grid.Column="3" BorderBrush="#FFAE07B6" BorderThickness="1">
+                        <Label Content="{Binding PlanBalance}" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic" />
+                    </Border>
+                    <Border Grid.Row="2" Grid.Column="3" BorderBrush="#FFAE07B6" BorderThickness="1">
+                        <Label Content="{Binding ItogBalance}" FontFamily="Candara" FontWeight="Bold" FontStyle="Italic" />
+                    </Border>
+                </Grid>
+            </Border>
+            <Button Style="{StaticResource StyleButton}"  Margin="286,4,0,0" Command="{Binding UpdatePlan}" Content="Обновить план" Foreground="White" BorderBrush="#FF3656FB" Background="#FF3656FB" FontWeight="Bold" FontStyle="Italic"/>
+            <StackPanel Grid.Column="2"  VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right" Width="621" Margin="0,15,0,0" >
+                <RadioButton Margin="44,0,52,0" GroupName="Type" Content="Продублировать для доходов" IsChecked="{Binding CheckIncome}"  FontFamily="Candara" FontWeight="Bold" FontStyle="Italic"/>
+                <RadioButton Margin="0,0,0,0" GroupName="Type" Content="Продублировать для расходов"  FontFamily="Candara" FontWeight="Bold" FontStyle="Italic"/>
+            </StackPanel>
+            <Button Style="{StaticResource StyleButton}"  Margin="0,10,0,0" Command="{Binding DuplicateForTheNextYear}" Content="Продублировать план для следующего года" Foreground="White" BorderBrush="#FF3656FB" Background="#FF3656FB" FontWeight="Bold" FontStyle="Italic" MaxWidth="550"/>
+
+            <Button Style="{StaticResource StyleButton}"  Margin="5,20,5,0" Content="Редактировать мой профиль" Command="{Binding MyProfile}" Foreground="White" BorderBrush="#FF3656FB" Background="#FF3656FB" FontWeight="Bold" FontStyle="Italic"/>
+            <Button Style="{StaticResource StyleButton}"  Margin="297,20,0,5" Content="Выход" Command="{Binding Close}" Background="#FFF7343D" BorderBrush="#FFF7343D" Foreground="White" FontWeight="Bold" FontStyle="Italic" RenderTransformOrigin="0.704,-3.292"/>
+        </StackPanel>
+    </Grid>
+</Window>

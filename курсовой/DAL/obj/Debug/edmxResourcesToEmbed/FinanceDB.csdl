@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FinanceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EXPENSE">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="expense_user_FK" Type="Int32" Nullable="false" />
+    <Property Name="expense_guide_FK" Type="Int32" Nullable="false" />
+    <Property Name="expense_date" Type="DateTime" Precision="0" />
+    <Property Name="expense_size" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <NavigationProperty Name="EXPENSE_GUIDE" Relationship="Self.FK_EXPENSE_EXPENSE_GUIDE" FromRole="EXPENSE" ToRole="EXPENSE_GUIDE" />
+    <NavigationProperty Name="USER" Relationship="Self.FK_EXPENSE_USER" FromRole="EXPENSE" ToRole="USER" />
+  </EntityType>
+  <EntityType Name="EXPENSE_GUIDE">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="expense_type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="EXPENSE" Relationship="Self.FK_EXPENSE_EXPENSE_GUIDE" FromRole="EXPENSE_GUIDE" ToRole="EXPENSE" />
+    <NavigationProperty Name="PERIOD" Relationship="Self.FK_PERIOD_EXPENSE_GUIDE" FromRole="EXPENSE_GUIDE" ToRole="PERIOD" />
+  </EntityType>
+  <EntityType Name="INCOME">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="income_user_FK" Type="Int32" Nullable="false" />
+    <Property Name="income_guid_FK" Type="Int32" Nullable="false" />
+    <Property Name="income_date" Type="DateTime" Precision="0" />
+    <Property Name="income_size" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <NavigationProperty Name="INCOME_GUIDE" Relationship="Self.FK_INCOME_INCOME_GUIDE" FromRole="INCOME" ToRole="INCOME_GUIDE" />
+    <NavigationProperty Name="USER" Relationship="Self.FK_INCOME_USER" FromRole="INCOME" ToRole="USER" />
+  </EntityType>
+  <EntityType Name="INCOME_GUIDE">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="income_type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="INCOME" Relationship="Self.FK_INCOME_INCOME_GUIDE" FromRole="INCOME_GUIDE" ToRole="INCOME" />
+  </EntityType>
+  <EntityType Name="PERIOD">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_FK" Type="Int32" Nullable="false" />
+    <Property Name="expense_type_FK" Type="Int32" />
+    <Property Name="expense_date_start" Type="DateTime" Precision="3" />
+    <Property Name="expense_date_end" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="expense_status" Type="Int32" Nullable="false" />
+    <Property Name="period_type_FK" Type="Int32" />
+    <Property Name="payment_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="expense_size" Type="Double" />
+    <Property Name="period_reminder" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="EXPENSE_GUIDE" Relationship="Self.FK_PERIOD_EXPENSE_GUIDE" FromRole="PERIOD" ToRole="EXPENSE_GUIDE" />
+    <NavigationProperty Name="TYPE_PERIOD" Relationship="Self.FK_PERIOD_TYPE_PERIOD" FromRole="PERIOD" ToRole="TYPE_PERIOD" />
+    <NavigationProperty Name="USER" Relationship="Self.FK_PERIOD_USER" FromRole="PERIOD" ToRole="USER" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TYPE_PERIOD">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="PERIOD" Relationship="Self.FK_PERIOD_TYPE_PERIOD" FromRole="TYPE_PERIOD" ToRole="PERIOD" />
+  </EntityType>
+  <EntityType Name="USER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="Binary" MaxLength="30" FixedLength="false" Nullable="false" />
+    <Property Name="surname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="login" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="limit_size" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <NavigationProperty Name="EXPENSE" Relationship="Self.FK_EXPENSE_USER" FromRole="USER" ToRole="EXPENSE" />
+    <NavigationProperty Name="INCOME" Relationship="Self.FK_INCOME_USER" FromRole="USER" ToRole="INCOME" />
+    <NavigationProperty Name="PERIOD" Relationship="Self.FK_PERIOD_USER" FromRole="USER" ToRole="PERIOD" />
+  </EntityType>
+  <Association Name="FK_EXPENSE_EXPENSE_GUIDE">
+    <End Role="EXPENSE_GUIDE" Type="Self.EXPENSE_GUIDE" Multiplicity="1" />
+    <End Role="EXPENSE" Type="Self.EXPENSE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EXPENSE_GUIDE">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EXPENSE">
+        <PropertyRef Name="expense_guide_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EXPENSE_USER">
+    <End Role="USER" Type="Self.USER" Multiplicity="1" />
+    <End Role="EXPENSE" Type="Self.EXPENSE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USER">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EXPENSE">
+        <PropertyRef Name="expense_user_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PERIOD_EXPENSE_GUIDE">
+    <End Role="EXPENSE_GUIDE" Type="Self.EXPENSE_GUIDE" Multiplicity="0..1" />
+    <End Role="PERIOD" Type="Self.PERIOD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EXPENSE_GUIDE">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PERIOD">
+        <PropertyRef Name="expense_type_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INCOME_INCOME_GUIDE">
+    <End Role="INCOME_GUIDE" Type="Self.INCOME_GUIDE" Multiplicity="1" />
+    <End Role="INCOME" Type="Self.INCOME" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="INCOME_GUIDE">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="INCOME">
+        <PropertyRef Name="income_guid_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INCOME_USER">
+    <End Role="USER" Type="Self.USER" Multiplicity="1" />
+    <End Role="INCOME" Type="Self.INCOME" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USER">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="INCOME">
+        <PropertyRef Name="income_user_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PERIOD_TYPE_PERIOD">
+    <End Role="TYPE_PERIOD" Type="Self.TYPE_PERIOD" Multiplicity="0..1" />
+    <End Role="PERIOD" Type="Self.PERIOD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TYPE_PERIOD">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PERIOD">
+        <PropertyRef Name="period_type_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PERIOD_USER">
+    <End Role="USER" Type="Self.USER" Multiplicity="1" />
+    <End Role="PERIOD" Type="Self.PERIOD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USER">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PERIOD">
+        <PropertyRef Name="user_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FinanceEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EXPENSE" EntityType="Self.EXPENSE" />
+    <EntitySet Name="EXPENSE_GUIDE" EntityType="Self.EXPENSE_GUIDE" />
+    <EntitySet Name="INCOME" EntityType="Self.INCOME" />
+    <EntitySet Name="INCOME_GUIDE" EntityType="Self.INCOME_GUIDE" />
+    <EntitySet Name="PERIOD" EntityType="Self.PERIOD" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TYPE_PERIOD" EntityType="Self.TYPE_PERIOD" />
+    <EntitySet Name="USER" EntityType="Self.USER" />
+    <AssociationSet Name="FK_EXPENSE_EXPENSE_GUIDE" Association="Self.FK_EXPENSE_EXPENSE_GUIDE">
+      <End Role="EXPENSE_GUIDE" EntitySet="EXPENSE_GUIDE" />
+      <End Role="EXPENSE" EntitySet="EXPENSE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EXPENSE_USER" Association="Self.FK_EXPENSE_USER">
+      <End Role="USER" EntitySet="USER" />
+      <End Role="EXPENSE" EntitySet="EXPENSE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PERIOD_EXPENSE_GUIDE" Association="Self.FK_PERIOD_EXPENSE_GUIDE">
+      <End Role="EXPENSE_GUIDE" EntitySet="EXPENSE_GUIDE" />
+      <End Role="PERIOD" EntitySet="PERIOD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INCOME_INCOME_GUIDE" Association="Self.FK_INCOME_INCOME_GUIDE">
+      <End Role="INCOME_GUIDE" EntitySet="INCOME_GUIDE" />
+      <End Role="INCOME" EntitySet="INCOME" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INCOME_USER" Association="Self.FK_INCOME_USER">
+      <End Role="USER" EntitySet="USER" />
+      <End Role="INCOME" EntitySet="INCOME" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PERIOD_TYPE_PERIOD" Association="Self.FK_PERIOD_TYPE_PERIOD">
+      <End Role="TYPE_PERIOD" EntitySet="TYPE_PERIOD" />
+      <End Role="PERIOD" EntitySet="PERIOD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PERIOD_USER" Association="Self.FK_PERIOD_USER">
+      <End Role="USER" EntitySet="USER" />
+      <End Role="PERIOD" EntitySet="PERIOD" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
